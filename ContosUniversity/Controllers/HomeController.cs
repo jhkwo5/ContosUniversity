@@ -25,7 +25,6 @@ namespace ContosUniversity.Controllers
 
         public async Task<ActionResult> About()
         {
-            ViewData["Message"] = "Your application description page.";
 
             IQueryable<EnrollmentDateGroup> data =
                 from student in _context.Students
